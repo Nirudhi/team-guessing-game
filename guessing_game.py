@@ -1,4 +1,6 @@
 import random
+import time
+start_time = time.time()
 while True:
 number = random.randint(1, 100)
 print("Guess a number between 1 and 100")
