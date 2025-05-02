@@ -2,6 +2,8 @@ import random
 while True:
 number = random.randint(1, 100)
 print("Guess a number between 1 and 100")
+attempts = 0
+attempts +=1
 guess = int(input())
 if guess < number:
     print("Too low!")
@@ -14,3 +16,4 @@ else:
 print("Play again? (y/n)")
     if input().lower() != 'y':
         break 
+print(f"You made {attempts} attempts.")
